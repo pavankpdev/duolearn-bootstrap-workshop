@@ -1,0 +1,275 @@
+:root {
+  --dark-secondary: #272734;
+  --dark-tertiary: #1e1f29;
+  --primary-color: #050cdd;
+  --text-color: #feffff;
+  --gray-color: #cbd5e0;
+  --gray-secondary-color: #a0aec0;
+  --primary-focused-color: #040ab8;
+}
+
+body {
+  background-color: var(--dark-secondary);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.clean-anchor {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bg-secondary-dark {
+  background-color: var(--dark-secondary);
+}
+
+.bg-tertiary-dark {
+  background-color: var(--dark-tertiary);
+}
+
+.clean-anchor:hover {
+  color: inherit;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-gray {
+  color: var(--gray-secondary-color);
+}
+
+.fs-7 {
+  font-size: 1rem;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+}
+
+.paragraph {
+  color: var(--gray-color);
+}
+
+.hero_container {
+  padding: 0 1rem;
+}
+
+.hero_overlay {
+  display: none;
+}
+
+.hero_image {
+  width: 100%;
+  height: 300px;
+}
+
+.hero_image > img {
+  width: 200px;
+}
+
+.hero_description {
+  text-align: center;
+}
+
+.hero_description > p {
+  color: #e2e8f0;
+  font-weight: 300;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:focus {
+  background-color: var(--primary-focused-color);
+  box-shadow: none;
+}
+
+.skill_item {
+  width: 75px;
+}
+
+.skill_item:hover {
+  background-color: var(--primary-color);
+  transition: all 0.4s linear;
+  transform: translate3d(0, -0.125rem, 0);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.project_card:hover {
+  transition: all 0.2s linear;
+  transform: translate3d(0, -0.125rem, 0);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero_overlay {
+    display: block;
+    height: 50vh;
+    width: 200px;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -10;
+    right: 0;
+  }
+
+  .skill_item {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero_overlay {
+    display: block;
+    height: 80vh;
+    width: 200px;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -10;
+    right: 0;
+  }
+
+  .skill_item {
+    width: 120px;
+  }
+
+  .fs-7 {
+    font-size: 1.2rem;
+  }
+
+  .fs-8 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero_overlay {
+    display: block;
+    height: 90vh;
+    width: 250px;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -10;
+    right: 0;
+  }
+
+  .about_container {
+    padding: 2rem !important;
+    margin-top: 10rem !important;
+  }
+
+  .hero_image > img {
+    width: 300px;
+    height: 400px !important;
+  }
+
+  .skill_item {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skill_item > i {
+    font-size: 3em;
+  }
+
+  .fs-2 {
+    font-size: 3rem !important;
+  }
+
+  .fs-6 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero_overlay {
+    display: block;
+    height: 90vh;
+    width: 400px;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -10;
+    right: 0;
+  }
+
+  .skill_item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skill_item > i {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .hero_overlay {
+    display: block;
+    height: 90vh;
+    width: 500px;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -10;
+    right: 0;
+  }
+
+  .skill_item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skill_item > i {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .hero_overlay {
+    display: block;
+    height: 70vh;
+    width: 35vw;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -10;
+    right: 0;
+  }
+
+  .skill_item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skill_item > i {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 3500px) {
+  .hero_overlay {
+    display: block;
+    height: 40vh;
+    width: 40vw;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -10;
+    right: 0;
+  }
+
+  .skill_item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skill_item > i {
+    font-size: 4em;
+  }
+}
